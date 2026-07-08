@@ -150,19 +150,12 @@ Service
         autonumber
 
         actor Client
-
         participant Controller
-
         participant Service
-
         participant Model
-
-        database DB
-
+        participant DB
         participant Event
-
         participant Job
-
         participant Notification
 
         Client->>Controller: HTTP Request
