@@ -597,9 +597,9 @@ A[Controller]
 
 A --> B[Service]
 
-B --> C[Loan::approved()]
+B --> C["Loan::approved()"]
 
-C --> D[Loan::overdue()]
+C --> D["Loan::overdue()"]
 
 D --> E[(Database)]
 ```
