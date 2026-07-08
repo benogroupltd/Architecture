@@ -181,13 +181,9 @@ app/
 Services/
 
     UserService.php
-
     LoanService.php
-
     CustomerService.php
-
     PaymentService.php
-
     InventoryService.php
 ```
 
@@ -201,11 +197,8 @@ Good
 
 ```
 UserService
-
 LoanService
-
 PaymentService
-
 OrderService
 ```
 
@@ -213,11 +206,8 @@ Avoid
 
 ```
 HelperService
-
 CommonService
-
 GeneralService
-
 UtilsService
 ```
 
