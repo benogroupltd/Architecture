@@ -74,37 +74,34 @@ A Controller is **NOT** responsible for:
 
 ```mermaid
 sequenceDiagram
+    autonumber
+    actor Client
+    participant Request
+    participant Controller
+    participant Service
+    participant Model
+    participant Database
+    participant Resource
 
-autonumber
+    Client->>Request: HTTP Request
+    Request->>Controller: Validate Request
+    Controller->>Service: Execute Business Logic
+    activate Service
 
-actor Client
+    Service->>Model: Query Database
+    activate Model
 
-participant Request
-participant Controller
-participant Service
-participant Model
-database DB
-participant Resource
+    Model->>Database: SQL Query
+    Database-->>Model: Records
 
-Client->>Request: HTTP Request
+    deactivate Model
+    Model-->>Service: Models
 
-Request->>Controller: Validated Data
+    deactivate Service
+    Service-->>Controller: Business Result
 
-Controller->>Service: Execute Business Logic
-
-Service->>Model: Query Database
-
-Model->>DB: SQL
-
-DB-->>Model: Result
-
-Model-->>Service: Model
-
-Service-->>Controller: Business Result
-
-Controller->>Resource: Transform Response
-
-Resource-->>Client: JSON Response
+    Controller->>Resource: Transform Response
+    Resource-->>Client: JSON Response
 ```
 
 ---
