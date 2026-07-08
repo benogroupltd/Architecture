@@ -87,65 +87,43 @@ Response
 
 ```mermaid
 sequenceDiagram
+    autonumber
 
-autonumber
+    actor User
+    participant Server as Web Server
+    participant Laravel
+    participant Middleware
+    participant Router
+    participant Request as Form Request
+    participant Controller
+    participant Service
+    participant Model
+    participant DB as Database
+    participant Resource
 
-actor User
+    User->>Server: HTTP Request
+    Server->>Laravel: public/index.php
+    Laravel->>Middleware: Global Middleware
+    Middleware->>Router: Continue
+    Router->>Request: Validate Request
 
-participant Server as Web Server
-participant Laravel
-participant Middleware
-participant Router
-participant Request as Form Request
-participant Controller
-participant Service
-participant Model
-database DB
-participant Resource
-
-User->>Server: HTTP Request
-
-Server->>Laravel: public/index.php
-
-Laravel->>Middleware: Global Middleware
-
-Middleware->>Router: Continue
-
-Router->>Request: Validate Request
-
-alt Validation Failed
-
-Request-->>User: 422 Validation Error
-
-else Validation Passed
-
-Request-->>Controller: Validated Data
-
-Controller->>Service: Execute Business Logic
-
-activate Service
-
-Service->>Model: Query Database
-
-activate Model
-
-Model->>DB: SQL
-
-DB-->>Model: Records
-
-deactivate Model
-
-Model-->>Service: Models
-
-Service-->>Controller: Business Result
-
-deactivate Service
-
-Controller->>Resource: Transform Response
-
-Resource-->>User: JSON Response
-
-end
+    alt Validation Failed
+        Request-->>User: 422 Validation Error
+    else Validation Passed
+        Request-->>Controller: Validated Data
+        Controller->>Service: Execute Business Logic
+        activate Service
+        Service->>Model: Query Database
+        activate Model
+        Model->>DB: SQL
+        DB-->>Model: Records
+        deactivate Model
+        Model-->>Service: Models
+        Service-->>Controller: Business Result
+        deactivate Service
+        Controller->>Resource: Transform Response
+        Resource-->>User: JSON Response
+    end
 ```
 
 ---
