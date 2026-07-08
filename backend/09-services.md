@@ -145,47 +145,47 @@ Service
 # Request Flow
 
 ```mermaid
-sequenceDiagram
+    sequenceDiagram
 
-autonumber
+        autonumber
 
-actor Client
+        actor Client
 
-participant Controller
+        participant Controller
 
-participant Service
+        participant Service
 
-participant Model
+        participant Model
 
-database DB
+        database DB
 
-participant Event
+        participant Event
 
-participant Job
+        participant Job
 
-participant Notification
+        participant Notification
 
-Client->>Controller: HTTP Request
+        Client->>Controller: HTTP Request
 
-Controller->>Service: Execute Business Logic
+        Controller->>Service: Execute Business Logic
 
-Service->>Model: Query / Save
+        Service->>Model: Query / Save
 
-Model->>DB: SQL
+        Model->>DB: SQL
 
-DB-->>Model: Result
+        DB-->>Model: Result
 
-Model-->>Service: Entity
+        Model-->>Service: Entity
 
-Service->>Event: Dispatch Event
+        Service->>Event: Dispatch Event
 
-Service->>Job: Dispatch Job
+        Service->>Job: Dispatch Job
 
-Service->>Notification: Notify User
+        Service->>Notification: Notify User
 
-Service-->>Controller: Return Result
+        Service-->>Controller: Return Result
 
-Controller-->>Client: Response
+        Controller-->>Client: Response
 ```
 
 ---
