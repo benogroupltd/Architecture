@@ -524,28 +524,11 @@ Never create repositories inside widgets.
 
 ```mermaid
 flowchart TD
-
-Widget
-
-↓
-
-Notifier
-
-↓
-
-Loading
-
-↓
-
-Repository
-
-↓
-
-Success
-
-↓
-
-Widget
+    A[Widget] --> B[Notifier]
+    B --> C[Loading State]
+    C --> D[Repository]
+    D --> E[Success State]
+    E --> A
 ```
 
 ---
