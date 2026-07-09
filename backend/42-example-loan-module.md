@@ -369,7 +369,7 @@ participant Action
 
 participant Loan
 
-database DB
+participant DB
 
 Customer->>Controller: Apply Loan
 
