@@ -36,11 +36,11 @@ This guide serves as the development standard for Flutter applications within an
 
 | Chapter | File                          | Description                                       |
 | ------- | ----------------------------- | ------------------------------------------------- |
-| 01      | `01-introduction.md`          | Flutter architecture philosophy and project goals |
-| 02      | `02-architecture-overview.md` | High-level architecture and application flow      |
-| 03      | `03-application-lifecycle.md` | Flutter application lifecycle                     |
-| 04      | `04-folder-structure.md`      | Enterprise folder organization                    |
-| 05      | `05-project-setup.md`         | Creating and configuring a new project            |
+| 01      | [01-introduction.md](01-introduction.md) | Flutter architecture philosophy and project goals |
+| 02      | [02-architecture-overview.md](02-architecture-overview.md) | High-level architecture and application flow      |
+| 03      | [03-application-lifecycle.md](03-application-lifecycle.md) | Flutter application lifecycle                     |
+| 04      | [04-folder-structure.md](04-folder-structure.md)      | Enterprise folder organization                    |
+| 05      | [05-project-setup.md](05-project-setup.md)         | Creating and configuring a new project            |
 
 ---
 
@@ -48,13 +48,13 @@ This guide serves as the development standard for Flutter applications within an
 
 | Chapter | File                      | Description                             |
 | ------- | ------------------------- | --------------------------------------- |
-| 06      | `06-navigation.md`        | GoRouter and navigation architecture    |
-| 07      | `07-state-management.md`  | Riverpod / Provider / Bloc architecture |
-| 08      | `08-ui-architecture.md`   | Screens, Widgets and reusable UI        |
-| 09      | `09-theme-management.md`  | Colors, typography and themes           |
-| 10      | `10-responsive-design.md` | Responsive layouts                      |
-| 11      | `11-localization.md`      | Multi-language support                  |
-| 12      | `12-form-validation.md`   | Forms and validation                    |
+| 06      | [06-navigation.md](06-navigation.md)        | GoRouter and navigation architecture    |
+| 07      | [07-state-management.md](07-state-management.md)  | Riverpod / Provider / Bloc architecture |
+| 08      | [08-ui-architecture.md](08-ui-architecture.md)   | Screens, Widgets and reusable UI        |
+| 09      | [09-theme-management.md](09-theme-management.md)  | Colors, typography and themes           |
+| 10      | [10-responsive-design.md](10-responsive-design.md) | Responsive layouts                      |
+| 11      | [11-localization.md](11-localization.md)      | Multi-language support                  |
+| 12      | [12-form-validation.md](12-form-validation.md)   | Forms and validation                    |
 
 ---
 
@@ -62,11 +62,11 @@ This guide serves as the development standard for Flutter applications within an
 
 | Chapter | File                       | Description                   |
 | ------- | -------------------------- | ----------------------------- |
-| 13      | `13-clean-architecture.md` | Clean Architecture principles |
-| 14      | `14-entities.md`           | Domain entities               |
-| 15      | `15-usecases.md`           | Business use cases            |
-| 16      | `16-repositories.md`       | Repository contracts          |
-| 17      | `17-dtos.md`               | Data Transfer Objects         |
+| 13      | [13-clean-architecture.md](13-clean-architecture.md) | Clean Architecture principles |
+| 14      | [14-entities.md](14-entities.md)           | Domain entities               |
+| 15      | [15-usecases.md](15-usecases.md)           | Business use cases            |
+| 16      | [16-repositories.md](16-repositories.md)       | Repository contracts          |
+| 17      | [17-dtos.md](17-dtos.md)               | Data Transfer Objects         |
 
 ---
 
@@ -74,12 +74,12 @@ This guide serves as the development standard for Flutter applications within an
 
 | Chapter | File                       | Description                        |
 | ------- | -------------------------- | ---------------------------------- |
-| 18      | `18-models.md`             | Models and serialization           |
-| 19      | `19-remote-data-source.md` | REST API implementation            |
-| 20      | `20-local-data-source.md`  | Local persistence                  |
-| 21      | `21-networking.md`         | Dio, interceptors and API handling |
-| 22      | `22-caching.md`            | Memory and local caching           |
-| 23      | `23-offline-support.md`    | Offline-first architecture         |
+| 18      | [18-models.md](18-models.md)             | Models and serialization           |
+| 19      | [19-remote-data-source.md](19-remote-data-source.md) | REST API implementation            |
+| 20      | [20-local-data-source.md](20-local-data-source.md)  | Local persistence                  |
+| 21      | [21-networking.md](21-networking.md)         | Dio, interceptors and API handling |
+| 22      | [22-caching.md](22-caching.md)            | Memory and local caching           |
+| 23      | [23-offline-support.md](23-offline-support.md)    | Offline-first architecture         |
 
 ---
 
@@ -87,13 +87,13 @@ This guide serves as the development standard for Flutter applications within an
 
 | Chapter | File                         | Description                    |
 | ------- | ---------------------------- | ------------------------------ |
-| 24      | `24-dependency-injection.md` | GetIt dependency injection     |
-| 25      | `25-services.md`             | Shared services                |
-| 26      | `26-storage.md`              | Secure storage and preferences |
-| 27      | `27-authentication.md`       | Authentication architecture    |
-| 28      | `28-authorization.md`        | Roles and permissions          |
-| 29      | `29-notifications.md`        | Push notifications             |
-| 30      | `30-background-tasks.md`     | Background processing          |
+| 24      | [24-dependency-injection.md](24-dependency-injection.md) | GetIt dependency injection     |
+| 25      | [25-services.md](25-services.md)             | Shared services                |
+| 26      | [26-storage.md](26-storage.md)              | Secure storage and preferences |
+| 27      | [27-authentication.md](27-authentication.md)       | Authentication architecture    |
+| 28      | [28-authorization.md](28-authorization.md)        | Roles and permissions          |
+| 29      | [29-notifications.md](29-notifications.md)        | Push notifications             |
+| 30      | [30-background-tasks.md](30-background-tasks.md)     | Background processing          |
 
 ---
 
@@ -101,14 +101,14 @@ This guide serves as the development standard for Flutter applications within an
 
 | Chapter | File                   | Description                          |
 | ------- | ---------------------- | ------------------------------------ |
-| 31      | `31-error-handling.md` | Exception handling                   |
-| 32      | `32-logging.md`        | Logging strategy                     |
-| 33      | `33-performance.md`    | Performance optimization             |
-| 34      | `34-security.md`       | Security best practices              |
-| 35      | `35-testing.md`        | Unit, widget and integration testing |
-| 36      | `36-code-style.md`     | Coding standards                     |
-| 37      | `37-ci-cd.md`          | Continuous Integration & Deployment  |
-| 38      | `38-deployment.md`     | Android & iOS deployment             |
+| 31      | [31-error-handling.md](31-error-handling.md) | Exception handling                   |
+| 32      | [32-logging.md](32-logging.md)        | Logging strategy                     |
+| 33      | [33-performance.md](33-performance.md)    | Performance optimization             |
+| 34      | [34-security.md](34-security.md)       | Security best practices              |
+| 35      | [35-testing.md](35-testing.md)        | Unit, widget and integration testing |
+| 36      | [36-code-style.md](36-code-style.md)     | Coding standards                     |
+| 37      | [37-ci-cd.md](37-ci-cd.md)          | Continuous Integration & Deployment  |
+| 38      | [38-deployment.md](38-deployment.md)     | Android & iOS deployment             |
 
 ---
 
@@ -116,10 +116,10 @@ This guide serves as the development standard for Flutter applications within an
 
 | Chapter | File                            | Description                      |
 | ------- | ------------------------------- | -------------------------------- |
-| 39      | `39-example-auth-module.md`     | Complete authentication feature  |
-| 40      | `40-example-user-module.md`     | Complete user management feature |
-| 41      | `41-example-shopping-module.md` | E-commerce module                |
-| 42      | `42-example-chat-module.md`     | Real-time chat module            |
+| 39      | [39-example-auth-module.md](39-example-auth-module.md)     | Complete authentication feature  |
+| 40      | [40-example-user-module.md](40-example-user-module.md)     | Complete user management feature |
+| 41      | [41-example-shopping-module.md](41-example-shopping-module.md) | E-commerce module                |
+| 42      | [42-example-chat-module.md](42-example-chat-module.md)     | Real-time chat module            |
 
 ---
 
@@ -127,9 +127,9 @@ This guide serves as the development standard for Flutter applications within an
 
 | Chapter | File                          | Description                    |
 | ------- | ----------------------------- | ------------------------------ |
-| 43      | `43-development-checklist.md` | Development workflow checklist |
-| 44      | `44-best-practices.md`        | Flutter best practices         |
-| 45      | `45-summary.md`               | Architecture summary           |
+| 43      | [43-development-checklist.md](43-development-checklist.md) | Development workflow checklist |
+| 44      | [44-best-practices.md](44-best-practices.md)        | Flutter best practices         |
+| 45      | [45-summary.md](45-summary.md)               | Architecture summary           |
 
 ---
 
