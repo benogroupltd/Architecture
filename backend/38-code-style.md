@@ -19,8 +19,8 @@ A consistent code style enables developers to:
 
 This project follows:
 
-* **[https://www.php-fig.org/psr/psr-1/](PSR-1)**
-* **[https://www.php-fig.org/psr/psr-12/](PSR-12)**
+* **[PSR-1](https://www.php-fig.org/psr/psr-1/)**
+* **[PSR-12](https://www.php-fig.org/psr/psr-12/)**
 * Laravel Coding Style
 * Laravel Pint
 * PHPStan recommendations
